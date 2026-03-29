@@ -150,7 +150,7 @@ const Index = () => {
               <span className="block gradient-text-2">продают</span>
             </h1>
             <p className="text-white/50 text-lg leading-relaxed mb-10 max-w-md animate-slide-up delay-200">
-              Специализируюсь на лендингах с 6-летним опытом. Создаю страницы, которые захватывают внимание и превращают посетителей в покупателей.
+              Создаю страницы, которые захватывают внимание и превращают посетителей в покупателей.
             </p>
             <div className="flex flex-wrap gap-4 animate-slide-up delay-300">
               <button
