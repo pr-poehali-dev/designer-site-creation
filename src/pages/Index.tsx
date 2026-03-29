@@ -144,13 +144,13 @@ const Index = () => {
               <span className="text-white/60 text-sm">Доступен для новых проектов</span>
             </div>
             <h1 className="font-display text-6xl md:text-8xl font-bold leading-[0.9] mb-6 animate-slide-up delay-100">
-              <span className="block text-white">Создаю</span>
-              <span className="block gradient-text">сайты,</span>
-              <span className="block text-white">которые</span>
-              <span className="block gradient-text-2">продают</span>
+              <span className="block text-white">Лендинг,</span>
+              <span className="block gradient-text">который</span>
+              <span className="block text-white">работает</span>
+              <span className="block gradient-text-2">на тебя</span>
             </h1>
             <p className="text-white/50 text-lg leading-relaxed mb-10 max-w-md animate-slide-up delay-200">
-              Создаю страницы, которые захватывают внимание и превращают посетителей в покупателей.
+              Проектирую и рисую продающие страницы — с чёткой структурой, сильным визуалом и понятным призывом к действию. Без воды, только результат.
             </p>
             <div className="flex flex-wrap gap-4 animate-slide-up delay-300">
               <button
