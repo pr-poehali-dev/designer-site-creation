@@ -183,13 +183,13 @@ const Index = () => {
           </div>
 
           <div className="relative hidden md:block animate-slide-up delay-300">
-            <div className="relative w-full aspect-square max-w-md ml-auto">
+            <div className="relative w-full max-w-sm ml-auto" style={{ aspectRatio: "3/4" }}>
               <div className="absolute inset-0 rounded-3xl overflow-hidden" style={{ background: "linear-gradient(135deg, #f953c6, #a855f7, #ff6b35)", padding: "2px" }}>
                 <div className="w-full h-full rounded-3xl overflow-hidden" style={{ backgroundColor: "#12121a" }}>
                   <img
                     src="https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/bucket/e158bdeb-6c79-45e6-b2b7-dcd7eec335cb.png"
                     alt="Константин Фомин — дизайнер"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
               </div>
