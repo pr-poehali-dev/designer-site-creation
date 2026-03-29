@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const WORKS = [
@@ -99,7 +99,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <button onClick={() => scrollTo("hero")} className="font-display text-xl font-bold gradient-text">
-            АК
+            КФ
           </button>
           <div className="hidden md:flex items-center gap-8">
             {[["works", "Работы"], ["about", "Обо мне"], ["services", "Услуги"], ["process", "Процесс"], ["contacts", "Контакты"]].map(([id, label]) => (
@@ -187,8 +187,8 @@ const Index = () => {
               <div className="absolute inset-0 rounded-3xl overflow-hidden" style={{ background: "linear-gradient(135deg, #f953c6, #a855f7, #ff6b35)", padding: "2px" }}>
                 <div className="w-full h-full rounded-3xl overflow-hidden" style={{ backgroundColor: "#12121a" }}>
                   <img
-                    src="https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/b18aeca6-5dc0-436b-b71d-be9a6a0cf05f.jpg"
-                    alt="Анна Крылова — дизайнер"
+                    src="https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/bucket/e158bdeb-6c79-45e6-b2b7-dcd7eec335cb.png"
+                    alt="Константин Фомин — дизайнер"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -272,7 +272,7 @@ const Index = () => {
           <div className="reveal grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden border border-white/10">
-                <img src="https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/b18aeca6-5dc0-436b-b71d-be9a6a0cf05f.jpg" alt="Анна" className="w-full h-full object-cover" />
+                <img src="https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/bucket/e158bdeb-6c79-45e6-b2b7-dcd7eec335cb.png" alt="Константин" className="w-full h-full object-cover object-top" />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to top, #0a0a0f 0%, transparent 50%)" }} />
               </div>
               <div className="absolute bottom-8 left-8 right-8 glass p-5 rounded-2xl">
@@ -288,12 +288,12 @@ const Index = () => {
 
             <div>
               <span className="text-sm font-semibold tracking-widest uppercase mb-3 block" style={{ color: "#f953c6" }}>Обо мне</span>
-              <h2 className="font-display text-5xl font-bold text-white mb-6">Привет, я <span className="gradient-text">Анна</span></h2>
+              <h2 className="font-display text-5xl font-bold text-white mb-6">Привет, я <span className="gradient-text">Константин</span></h2>
               <p className="text-white/60 text-lg leading-relaxed mb-6">
                 Дизайнер сайтов и интерфейсов с 6 годами опыта. Специализируюсь на создании продуктов, которые не просто красивы — они работают и конвертируют посетителей в клиентов.
               </p>
               <p className="text-white/50 leading-relaxed mb-10">
-                Работала с бизнесами от стартапов до крупных корпораций. Мой подход: сначала понять цели бизнеса, потом создавать дизайн. Результат — сайты, которые решают задачи.
+                Работал с бизнесами от стартапов до крупных корпораций. Мой подход: сначала понять цели бизнеса, потом создавать дизайн. Результат — сайты, которые решают задачи.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -446,7 +446,7 @@ const Index = () => {
       {/* FOOTER */}
       <footer className="border-t py-8" style={{ borderColor: "#1e1e2e" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="font-display text-xl font-bold gradient-text">Анна Крылова</div>
+          <div className="font-display text-xl font-bold gradient-text">Константин Фомин</div>
           <p className="text-white/30 text-sm">© 2026 · Дизайнер сайтов</p>
           <div className="flex gap-3">
             {[["Behance", "Globe"], ["Dribbble", "Palette"], ["Instagram", "Camera"]].map(([name, icon]) => (
