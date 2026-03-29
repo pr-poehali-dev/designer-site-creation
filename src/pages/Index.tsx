@@ -20,45 +20,42 @@ const WORKS = [
   },
   {
     id: 3,
-    title: "Лендинг юридических услуг",
-    category: "Редизайн",
-    tags: ["UX/UI", "Редизайн"],
-    image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/dfcbe7c6-49e6-4ebd-803b-6732fcaceca6.jpg",
-    color: "from-purple-500 to-blue-600",
-  },
-  {
-    id: 4,
     title: "Лендинг онлайн-курсов",
     category: "Лендинг",
     tags: ["UX/UI", "Конверсия"],
-    image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/25caa313-fe7d-4521-912e-99b1073bbeec.jpg",
+    image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/dfcbe7c6-49e6-4ebd-803b-6732fcaceca6.jpg",
     color: "from-teal-500 to-purple-600",
   },
   {
-    id: 5,
-    title: "Лендинг для застройщика",
-    category: "Срочные",
-    tags: ["UX/UI", "48 часов"],
-    image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/dfcbe7c6-49e6-4ebd-803b-6732fcaceca6.jpg",
-    color: "from-pink-400 to-orange-500",
-  },
-  {
-    id: 6,
+    id: 4,
     title: "Лендинг IT-продукта",
     category: "Лендинг",
     tags: ["UX/UI", "SaaS"],
     image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/25caa313-fe7d-4521-912e-99b1073bbeec.jpg",
     color: "from-purple-600 to-pink-500",
   },
+  {
+    id: 5,
+    title: "Лендинг для застройщика",
+    category: "Лендинг",
+    tags: ["UX/UI", "Недвижимость"],
+    image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/dfcbe7c6-49e6-4ebd-803b-6732fcaceca6.jpg",
+    color: "from-pink-400 to-orange-500",
+  },
+  {
+    id: 6,
+    title: "Лендинг юридических услуг",
+    category: "Лендинг",
+    tags: ["UX/UI", "B2B"],
+    image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/25caa313-fe7d-4521-912e-99b1073bbeec.jpg",
+    color: "from-purple-500 to-blue-600",
+  },
 ];
 
 const SERVICES = [
-  { name: "Лендинг базовый", desc: "До 5 секций, один оффер", price: "от 15 000 ₽", time: "2–3 дня", popular: false },
-  { name: "Лендинг стандарт", desc: "6–10 секций, полная структура продаж", price: "от 30 000 ₽", time: "4–6 дней", popular: true },
-  { name: "Лендинг премиум", desc: "10+ секций, анимации, уникальный дизайн", price: "от 55 000 ₽", time: "7–10 дней", popular: false },
-  { name: "Редизайн лендинга", desc: "Обновление существующей страницы", price: "от 20 000 ₽", time: "3–5 дней", popular: false },
-  { name: "Лендинг + вёрстка", desc: "Дизайн и готовый HTML/CSS", price: "от 45 000 ₽", time: "6–8 дней", popular: false },
-  { name: "Срочный лендинг", desc: "Готово за 24–48 часов", price: "от 25 000 ₽", time: "1–2 дня", popular: false },
+  { name: "Лендинг базовый", desc: "До 5 секций, один оффер", price: "от 35 000 ₽", time: "3–4 дня", popular: false },
+  { name: "Лендинг стандарт", desc: "6–10 секций, полная структура продаж", price: "от 55 000 ₽", time: "5–7 дней", popular: true },
+  { name: "Лендинг премиум", desc: "10+ секций, анимации, уникальный дизайн", price: "от 90 000 ₽", time: "10–14 дней", popular: false },
 ];
 
 const PROCESS = [
@@ -70,7 +67,7 @@ const PROCESS = [
   { num: "06", title: "Поддержка", desc: "На связи 30 дней после запуска" },
 ];
 
-const FILTERS = ["Все", "Лендинг", "Редизайн", "Срочные"];
+const FILTERS = ["Все", "Лендинг"];
 
 const Index = () => {
   const [activeFilter, setActiveFilter] = useState("Все");
