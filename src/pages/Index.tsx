@@ -53,9 +53,7 @@ const WORKS = [
 ];
 
 const SERVICES = [
-  { name: "Лендинг базовый", desc: "До 5 секций, один оффер", price: "от 35 000 ₽", time: "3–4 дня", popular: false },
-  { name: "Лендинг стандарт", desc: "6–10 секций, полная структура продаж", price: "от 55 000 ₽", time: "5–7 дней", popular: true },
-  { name: "Лендинг премиум", desc: "10+ секций, анимации, уникальный дизайн", price: "от 90 000 ₽", time: "10–14 дней", popular: false },
+  { name: "Лендинг", desc: "Полноценная продающая страница под ключ — структура, дизайн, анимации", price: "от 35 000 ₽", time: "5–7 дней", popular: true },
 ];
 
 const PROCESS = [
@@ -409,20 +407,24 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <a
-                  href="mailto:anna@design.ru"
+                  href="https://max.ru/u/f9LHodD0cOLZX4VGiQ8pxyjY80LO2WQqtHkg0kHVIMbuSBPjl2GT__eH5l0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-semibold text-white transition-all hover:scale-105"
                   style={{ background: "linear-gradient(135deg, #f953c6, #a855f7)" }}
                 >
-                  <Icon name="Mail" size={18} />
-                  Написать письмо
+                  <Icon name="MessageCircle" size={18} />
+                  Написать в MAX
                 </a>
                 <a
-                  href="https://t.me/anna_design"
+                  href="https://vk.com/id706493863"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-semibold border border-white/20 hover:border-white/40 transition-all hover:scale-105 glass"
                   style={{ color: "rgba(255,255,255,0.8)" }}
                 >
-                  <Icon name="MessageCircle" size={18} />
-                  Telegram
+                  <Icon name="Users" size={18} />
+                  ВКонтакте
                 </a>
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/30 text-sm">
@@ -432,7 +434,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Globe" size={14} />
-                  Работаю удалённо
+                  Приём заявок через MAX
                 </div>
               </div>
             </div>
@@ -446,11 +448,12 @@ const Index = () => {
           <div className="font-display text-xl font-bold gradient-text">Константин Фомин</div>
           <p className="text-white/30 text-sm">© 2026 · Дизайнер лендингов</p>
           <div className="flex gap-3">
-            {[["Behance", "Globe"], ["Dribbble", "Palette"], ["Instagram", "Camera"]].map(([name, icon]) => (
-              <button key={name} className="w-9 h-9 rounded-full glass flex items-center justify-center text-white/40 hover:text-white/80 transition-colors">
-                <Icon name={icon} size={16} />
-              </button>
-            ))}
+            <a href="https://vk.com/id706493863" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full glass flex items-center justify-center text-white/40 hover:text-white/80 transition-colors">
+              <Icon name="Users" size={16} />
+            </a>
+            <a href="https://max.ru/u/f9LHodD0cOLZX4VGiQ8pxyjY80LO2WQqtHkg0kHVIMbuSBPjl2GT__eH5l0" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full glass flex items-center justify-center text-white/40 hover:text-white/80 transition-colors">
+              <Icon name="MessageCircle" size={16} />
+            </a>
           </div>
         </div>
       </footer>
