@@ -1,6 +1,29 @@
 import { useEffect, useState } from "react";
 import Icon from "@/components/ui/icon";
 
+const FaqItem = ({ q, a }: { q: string; a: string }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div
+      className="rounded-2xl border border-white/5 overflow-hidden transition-all duration-300 cursor-pointer"
+      style={{ backgroundColor: open ? "rgba(249,83,198,0.05)" : "rgba(255,255,255,0.02)" }}
+      onClick={() => setOpen(!open)}
+    >
+      <div className="flex items-center justify-between px-7 py-5 gap-4">
+        <span className="font-display font-semibold text-white text-lg">{q}</span>
+        <div className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style={{ background: "linear-gradient(135deg, #f953c6, #a855f7)", transform: open ? "rotate(45deg)" : "rotate(0deg)" }}>
+          <Icon name="Plus" size={14} />
+        </div>
+      </div>
+      {open && (
+        <div className="px-7 pb-6 text-white/50 leading-relaxed animate-fade-scale">
+          {a}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const WORKS = [
   {
     id: 1,
@@ -405,6 +428,46 @@ const Index = () => {
                 <h3 className="font-display text-2xl font-bold text-white mb-3">{step.title}</h3>
                 <p className="text-white/50 leading-relaxed">{step.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="reveal text-center mb-16">
+            <span className="text-sm font-semibold tracking-widest uppercase mb-3 block" style={{ color: "#f953c6" }}>FAQ</span>
+            <h2 className="font-display text-5xl md:text-6xl font-bold text-white mb-4">Частые <span className="gradient-text">вопросы</span></h2>
+          </div>
+          <div className="reveal flex flex-col gap-3">
+            {[
+              {
+                q: "Что входит в стоимость?",
+                a: "Анализ ниши и конкурентов, разработка структуры, полный дизайн всех секций, адаптив под мобильные, анимации, 2 раунда правок и готовый Figma-файл со всеми исходниками."
+              },
+              {
+                q: "Как проходит оплата?",
+                a: "50% предоплата перед стартом, 50% после сдачи финального макета. Работаю по договору или без — как удобнее."
+              },
+              {
+                q: "Вы делаете вёрстку?",
+                a: "Делаю дизайн и передаю макет разработчику. По запросу могу порекомендовать проверенного верстальщика или сверстать сам — обсуждается отдельно."
+              },
+              {
+                q: "Сколько длится работа?",
+                a: "Стандартный срок — 5–7 рабочих дней. Зависит от объёма страницы и скорости согласования с вашей стороны."
+              },
+              {
+                q: "Можно ли посмотреть примеры до начала работы?",
+                a: "Да, в разделе «Работы» есть реальные проекты. Также могу показать дополнительные кейсы по вашей нише в мессенджере."
+              },
+              {
+                q: "Что нужно предоставить для старта?",
+                a: "Бриф (заполним вместе), ваши материалы — тексты, фото, логотип. Если материалов нет — помогу с рекомендациями по контенту."
+              },
+            ].map(({ q, a }, i) => (
+              <FaqItem key={i} q={q} a={a} />
             ))}
           </div>
         </div>
