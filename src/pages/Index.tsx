@@ -61,7 +61,7 @@ const PROCESS = [
   { num: "02", title: "Концепция", desc: "Создаю 2–3 варианта визуального направления" },
   { num: "03", title: "Дизайн", desc: "Разрабатываю все экраны с анимациями" },
   { num: "04", title: "Правки", desc: "Две итерации правок включены в стоимость" },
-  { num: "05", title: "Вёрстка", desc: "Передаю готовый сайт разработчику или верстаю сама" },
+  { num: "05", title: "Вёрстка", desc: "Передаю готовый сайт разработчику или верстаю сам" },
   { num: "06", title: "Поддержка", desc: "На связи 30 дней после запуска" },
 ];
 
@@ -141,7 +141,7 @@ const Index = () => {
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-slide-up">
               <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-white/60 text-sm">Доступна для новых проектов</span>
+              <span className="text-white/60 text-sm">Доступен для новых проектов</span>
             </div>
             <h1 className="font-display text-6xl md:text-8xl font-bold leading-[0.9] mb-6 animate-slide-up delay-100">
               <span className="block text-white">Создаю</span>
