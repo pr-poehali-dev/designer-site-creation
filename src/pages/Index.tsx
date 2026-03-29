@@ -4,61 +4,61 @@ import Icon from "@/components/ui/icon";
 const WORKS = [
   {
     id: 1,
-    title: "Интернет-магазин Bloom",
-    category: "Интернет-магазин",
-    tags: ["UX/UI", "Брендинг"],
+    title: "Лендинг для фитнес-клуба",
+    category: "Лендинг",
+    tags: ["UX/UI", "Анимации"],
     image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/dfcbe7c6-49e6-4ebd-803b-6732fcaceca6.jpg",
     color: "from-pink-500 to-purple-600",
   },
   {
     id: 2,
-    title: "Лендинг студии",
+    title: "Лендинг дизайн-студии",
     category: "Лендинг",
-    tags: ["UX/UI", "Анимации"],
+    tags: ["UX/UI", "Брендинг"],
     image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/25caa313-fe7d-4521-912e-99b1073bbeec.jpg",
     color: "from-orange-500 to-pink-500",
   },
   {
     id: 3,
-    title: "Корпоративный сайт",
-    category: "Корпоративный",
+    title: "Лендинг юридических услуг",
+    category: "Редизайн",
     tags: ["UX/UI", "Редизайн"],
     image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/dfcbe7c6-49e6-4ebd-803b-6732fcaceca6.jpg",
     color: "from-purple-500 to-blue-600",
   },
   {
     id: 4,
-    title: "Мобильное приложение",
-    category: "Мобайл",
-    tags: ["UX/UI", "Прототип"],
+    title: "Лендинг онлайн-курсов",
+    category: "Лендинг",
+    tags: ["UX/UI", "Конверсия"],
     image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/25caa313-fe7d-4521-912e-99b1073bbeec.jpg",
     color: "from-teal-500 to-purple-600",
   },
   {
     id: 5,
-    title: "Портфолио архитектора",
-    category: "Лендинг",
-    tags: ["UX/UI", "Брендинг"],
+    title: "Лендинг для застройщика",
+    category: "Срочные",
+    tags: ["UX/UI", "48 часов"],
     image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/dfcbe7c6-49e6-4ebd-803b-6732fcaceca6.jpg",
     color: "from-pink-400 to-orange-500",
   },
   {
     id: 6,
-    title: "SaaS дашборд",
-    category: "Мобайл",
-    tags: ["UX/UI", "Система"],
+    title: "Лендинг IT-продукта",
+    category: "Лендинг",
+    tags: ["UX/UI", "SaaS"],
     image: "https://cdn.poehali.dev/projects/7d0697cd-da43-4ea3-abb9-b57b8449bfc1/files/25caa313-fe7d-4521-912e-99b1073bbeec.jpg",
     color: "from-purple-600 to-pink-500",
   },
 ];
 
 const SERVICES = [
-  { name: "Лендинг", desc: "1–3 экрана, ёмко и убедительно", price: "от 25 000 ₽", time: "3–5 дней", popular: false },
-  { name: "Многостраничный сайт", desc: "До 10 страниц, полный дизайн", price: "от 60 000 ₽", time: "10–14 дней", popular: true },
-  { name: "Интернет-магазин", desc: "Каталог, карточки, корзина", price: "от 90 000 ₽", time: "14–21 день", popular: false },
-  { name: "Мобильное приложение", desc: "iOS / Android, прототип + дизайн", price: "от 80 000 ₽", time: "14–20 дней", popular: false },
-  { name: "Брендинг", desc: "Логотип, гайдлайн, фирменный стиль", price: "от 35 000 ₽", time: "7–10 дней", popular: false },
-  { name: "Редизайн сайта", desc: "Обновление визуала и UX", price: "от 40 000 ₽", time: "7–12 дней", popular: false },
+  { name: "Лендинг базовый", desc: "До 5 секций, один оффер", price: "от 15 000 ₽", time: "2–3 дня", popular: false },
+  { name: "Лендинг стандарт", desc: "6–10 секций, полная структура продаж", price: "от 30 000 ₽", time: "4–6 дней", popular: true },
+  { name: "Лендинг премиум", desc: "10+ секций, анимации, уникальный дизайн", price: "от 55 000 ₽", time: "7–10 дней", popular: false },
+  { name: "Редизайн лендинга", desc: "Обновление существующей страницы", price: "от 20 000 ₽", time: "3–5 дней", popular: false },
+  { name: "Лендинг + вёрстка", desc: "Дизайн и готовый HTML/CSS", price: "от 45 000 ₽", time: "6–8 дней", popular: false },
+  { name: "Срочный лендинг", desc: "Готово за 24–48 часов", price: "от 25 000 ₽", time: "1–2 дня", popular: false },
 ];
 
 const PROCESS = [
@@ -70,7 +70,7 @@ const PROCESS = [
   { num: "06", title: "Поддержка", desc: "На связи 30 дней после запуска" },
 ];
 
-const FILTERS = ["Все", "Лендинг", "Интернет-магазин", "Корпоративный", "Мобайл"];
+const FILTERS = ["Все", "Лендинг", "Редизайн", "Срочные"];
 
 const Index = () => {
   const [activeFilter, setActiveFilter] = useState("Все");
@@ -155,7 +155,7 @@ const Index = () => {
               <span className="block gradient-text-2">продают</span>
             </h1>
             <p className="text-white/50 text-lg leading-relaxed mb-10 max-w-md animate-slide-up delay-200">
-              Дизайнер сайтов с 6-летним опытом. Создаю визуальные решения для бизнеса — от идеи до готового продукта.
+              Специализируюсь на лендингах с 6-летним опытом. Создаю страницы, которые захватывают внимание и превращают посетителей в покупателей.
             </p>
             <div className="flex flex-wrap gap-4 animate-slide-up delay-300">
               <button
@@ -290,10 +290,10 @@ const Index = () => {
               <span className="text-sm font-semibold tracking-widest uppercase mb-3 block" style={{ color: "#f953c6" }}>Обо мне</span>
               <h2 className="font-display text-5xl font-bold text-white mb-6">Привет, я <span className="gradient-text">Константин</span></h2>
               <p className="text-white/60 text-lg leading-relaxed mb-6">
-                Дизайнер сайтов и интерфейсов с 6 годами опыта. Специализируюсь на создании продуктов, которые не просто красивы — они работают и конвертируют посетителей в клиентов.
+                Дизайнер лендингов с 6 годами опыта. Делаю только посадочные страницы — и делаю их хорошо. Каждый лендинг заточен под конкретную цель: заявка, звонок, покупка.
               </p>
               <p className="text-white/50 leading-relaxed mb-10">
-                Работал с бизнесами от стартапов до крупных корпораций. Мой подход: сначала понять цели бизнеса, потом создавать дизайн. Результат — сайты, которые решают задачи.
+                Работал с бизнесами разных ниш: онлайн-школы, застройщики, юристы, IT-продукты, фитнес. Мой подход: сначала стратегия, потом дизайн. Результат — страницы, которые продают.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -447,7 +447,7 @@ const Index = () => {
       <footer className="border-t py-8" style={{ borderColor: "#1e1e2e" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="font-display text-xl font-bold gradient-text">Константин Фомин</div>
-          <p className="text-white/30 text-sm">© 2026 · Дизайнер сайтов</p>
+          <p className="text-white/30 text-sm">© 2026 · Дизайнер лендингов</p>
           <div className="flex gap-3">
             {[["Behance", "Globe"], ["Dribbble", "Palette"], ["Instagram", "Camera"]].map(([name, icon]) => (
               <button key={name} className="w-9 h-9 rounded-full glass flex items-center justify-center text-white/40 hover:text-white/80 transition-colors">
