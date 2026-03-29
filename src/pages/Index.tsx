@@ -319,48 +319,69 @@ const Index = () => {
             <p className="text-white/40 max-w-lg mx-auto">Полный цикл дизайна — от концепции до передачи в разработку</p>
           </div>
 
-          <div className="reveal overflow-x-auto rounded-3xl border" style={{ borderColor: "#1e1e2e" }}>
-            <table className="w-full min-w-[600px]">
-              <thead>
-                <tr style={{ background: "linear-gradient(135deg, rgba(249,83,198,0.12), rgba(168,85,247,0.12))" }}>
-                  <th className="text-left px-8 py-5 font-display font-semibold text-white/70 text-sm tracking-widest">УСЛУГА</th>
-                  <th className="text-left px-6 py-5 font-display font-semibold text-white/70 text-sm tracking-widest">ОПИСАНИЕ</th>
-                  <th className="text-left px-6 py-5 font-display font-semibold text-white/70 text-sm tracking-widest">СРОК</th>
-                  <th className="text-right px-8 py-5 font-display font-semibold text-white/70 text-sm tracking-widest">СТОИМОСТЬ</th>
-                </tr>
-              </thead>
-              <tbody>
-                {SERVICES.map((s) => (
-                  <tr key={s.name} className="border-t hover:bg-white/3 transition-colors group" style={{ borderColor: "#1e1e2e", backgroundColor: s.popular ? "rgba(249,83,198,0.04)" : undefined }}>
-                    <td className="px-8 py-5">
-                      <div className="flex items-center gap-3">
-                        <span className="font-display font-semibold text-white text-lg">{s.name}</span>
-                        {s.popular && (
-                          <span className="text-xs px-2.5 py-0.5 rounded-full font-medium text-white" style={{ background: "linear-gradient(135deg, #f953c6, #a855f7)" }}>
-                            Хит
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                    <td className="px-6 py-5 text-white/50 text-sm">{s.desc}</td>
-                    <td className="px-6 py-5">
-                      <div className="flex items-center gap-2 text-white/50 text-sm">
-                        <Icon name="Clock" size={14} style={{ color: "#a855f7" }} />
-                        {s.time}
-                      </div>
-                    </td>
-                    <td className="px-8 py-5 text-right">
-                      <span className="font-display font-bold text-xl gradient-text">{s.price}</span>
-                    </td>
-                  </tr>
+          <div className="reveal rounded-3xl border overflow-hidden" style={{ borderColor: "#1e1e2e", background: "linear-gradient(135deg, rgba(249,83,198,0.05), rgba(168,85,247,0.05))" }}>
+            <div className="p-8 md:p-12">
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-8 mb-10">
+                <div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="font-display text-4xl font-bold text-white">Лендинг под ключ</h3>
+                    <span className="text-xs px-3 py-1 rounded-full font-medium text-white" style={{ background: "linear-gradient(135deg, #f953c6, #a855f7)" }}>Единственный тариф</span>
+                  </div>
+                  <p className="text-white/50 text-lg max-w-xl">Полноценная продающая страница — от анализа задачи до готового макета. Всё включено, никаких скрытых доплат.</p>
+                </div>
+                <div className="flex-shrink-0 text-right">
+                  <div className="font-display text-5xl font-bold gradient-text">от 35 000 ₽</div>
+                  <div className="flex items-center justify-end gap-2 mt-2 text-white/40 text-sm">
+                    <Icon name="Clock" size={14} style={{ color: "#a855f7" }} />
+                    5–7 рабочих дней
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4 mb-10">
+                {[
+                  { icon: "Search", title: "Анализ и стратегия", desc: "Изучаю нишу, конкурентов и целевую аудиторию. Выстраиваю структуру страницы под конкретную цель — заявка, звонок или продажа." },
+                  { icon: "Layout", title: "Прототип и структура", desc: "Создаю wireframe всех секций: оффер, выгоды, кейсы, отзывы, CTA. Согласовываем логику до начала дизайна." },
+                  { icon: "Palette", title: "Уникальный дизайн", desc: "Разрабатываю визуал с нуля — никаких шаблонов. Фирменный стиль, типографика, цвета, иконки и иллюстрации." },
+                  { icon: "Sparkles", title: "Анимации и микровзаимодействия", desc: "Добавляю плавные переходы и hover-эффекты, которые удерживают внимание и делают страницу живой." },
+                  { icon: "Smartphone", title: "Адаптив под все устройства", desc: "Дизайн идеально выглядит на телефоне, планшете и десктопе. Каждый экран прорабатывается отдельно." },
+                  { icon: "RefreshCw", title: "2 раунда правок", desc: "После сдачи макета вношу правки по вашим комментариям. Два полных раунда корректировок включены в стоимость." },
+                ].map(({ icon, title, desc }) => (
+                  <div key={title} className="flex gap-4 p-5 rounded-2xl glass border border-white/5">
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: "linear-gradient(135deg, rgba(249,83,198,0.2), rgba(168,85,247,0.2))" }}>
+                      <Icon name={icon} size={18} style={{ color: "#f953c6" }} />
+                    </div>
+                    <div>
+                      <div className="font-display font-semibold text-white mb-1">{title}</div>
+                      <div className="text-white/45 text-sm leading-relaxed">{desc}</div>
+                    </div>
+                  </div>
                 ))}
-              </tbody>
-            </table>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-between pt-8 border-t border-white/5">
+                <div className="flex flex-wrap gap-3">
+                  {["Figma-макет", "Все исходники", "Мобильная версия", "Поддержка 30 дней"].map(tag => (
+                    <span key={tag} className="text-xs px-3 py-1.5 rounded-full text-white/50 border border-white/10">{tag}</span>
+                  ))}
+                </div>
+                <a
+                  href="https://max.ru/u/f9LHodD0cOLZX4VGiQ8pxyjY80LO2WQqtHkg0kHVIMbuSBPjl2GT__eH5l0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-white text-sm transition-all hover:scale-105"
+                  style={{ background: "linear-gradient(135deg, #f953c6, #a855f7)" }}
+                >
+                  <Icon name="MessageCircle" size={16} />
+                  Обсудить проект
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div className="reveal mt-6 p-5 rounded-2xl glass border border-white/5 flex items-start gap-4">
+          <div className="reveal mt-4 p-5 rounded-2xl glass border border-white/5 flex items-start gap-4">
             <Icon name="Info" size={18} style={{ color: "#f953c6" }} className="flex-shrink-0 mt-0.5" />
-            <p className="text-white/50 text-sm">Итоговая стоимость зависит от объёма и сложности проекта. Все цены включают 2 итерации правок. Первая консультация — бесплатно.</p>
+            <p className="text-white/50 text-sm">Итоговая стоимость зависит от объёма и сложности. Первая консультация — бесплатно.</p>
           </div>
         </div>
       </section>
